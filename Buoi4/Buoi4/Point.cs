@@ -64,7 +64,7 @@ namespace Buoi4
         }
         public override string ToString()
     {
-        return "Tên: " + Ten + "\n" + "Tọa độ X: " + X + "\n" + "Tọa độ Y: " + Y;
+        return "Tên: " + Ten + "\t" + "Tọa độ X: " + X + "\t" + "Tọa độ Y: " + Y;
     }
     }
 }

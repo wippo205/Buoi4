@@ -21,7 +21,7 @@ namespace Buoi4
             
 
 
-            Point tam = new Point(3,3);
+            Point tam = new Point(5, 5);
             double banKinh = 10.5;
 
         HinhTron hinhTron = new HinhTron(tam, banKinh);

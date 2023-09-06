@@ -12,12 +12,6 @@ namespace Buoi4
             public Point Tam { get; set; }
             public double BanKinh { get; set; }
 
-         public ToaDo(float x, float y)
-    {
-        X = x;
-        Y = y;
-    }
-
             public HinhTron(Point tam, double banKinh)
             {
                 Tam = tam;
@@ -40,3 +34,5 @@ namespace Buoi4
             }
         }
 }
+
+
