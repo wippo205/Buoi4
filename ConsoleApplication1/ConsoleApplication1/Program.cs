@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 namespace ConsoleApplication1
 {
     class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-        }
+        Point point = new Point("", 0.0f, 0.0f);
+        point.NhapThongTin();
+
+        Console.WriteLine("Tên: {point.Ten}");
+        Console.WriteLine("Tọa độ X: {point.X}");
+        Console.WriteLine("Tọa độ Y: {point.Y}");
+
     }
+}
 }
