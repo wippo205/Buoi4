@@ -10,13 +10,26 @@ namespace Buoi4
     {
         static void Main(string[] args)
         {
+
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.Unicode;
             Point point = new Point("", 0.0f, 0.0f);
             point.NhapThongTin();
 
-            Console.WriteLine("Tên: {point.Ten}");
-            Console.WriteLine("Tọa độ X: {point.X}");
-            Console.WriteLine("Tọa độ Y: {point.Y}");
-            Console.ReadLine();
+            string info = point.ToString();
+            Console.WriteLine(info);
+            
+
+
+            Point tam = new Point(3,3);
+            double banKinh = 10.5;
+
+        HinhTron hinhTron = new HinhTron(tam, banKinh);
+
+        Console.WriteLine(hinhTron.ToString());
+        Console.WriteLine("Diện tích: {0}",hinhTron.TinhDienTich());
+        Console.WriteLine("Chu vi: {0}",hinhTron.TinhChuVi());
+        Console.ReadLine();
         }
     }
 }

@@ -37,6 +37,20 @@ namespace Buoi4
             this.Y = y;
         }
 
+        public Point(float x, float y)
+        {
+            Ten = "";
+            X = x;
+            Y = y;
+        }
+
+        public Point()
+        {
+            Ten = "";
+            X = 0.0f;
+            Y = 0.0f;
+        }
+
         public void NhapThongTin()
         {
             Console.Write("Nhập tên: ");
@@ -48,5 +62,11 @@ namespace Buoi4
             Console.Write("Nhập tọa độ Y: ");
             Y = Convert.ToInt32(Console.ReadLine());
         }
+        public override string ToString()
+    {
+        return "Tên: " + Ten + "\n" + "Tọa độ X: " + X + "\n" + "Tọa độ Y: " + Y;
+    }
     }
 }
+
+
